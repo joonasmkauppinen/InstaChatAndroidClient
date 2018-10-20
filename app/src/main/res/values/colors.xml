@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorChatMainPink">#F4386E</color>
+
+    <color name="colorMainWhite">#f8f8f8</color>
+    <color name="colorPureWhite">#ffffff</color>
+
+    <color name="colorMainBlue">#3b6be3</color>
+    <color name="colorDarkBlue">#315abc</color>
+    <color name="colorLightBlue">#e4ebff</color>
+
+    <color name="colorGrey">#afafaf</color>
+    <color name="colorLightGrey">#e0e0e0</color>
+
+    <color name="colorLightBrown">#9B9186</color>
+    <color name="colorBrownSendButton">#625c55</color>
+
+    <color name="colorError">#FF4163</color>
+    <color name="colorLightError">#ffe5e5</color>
+
+    <color name="colorMessageText">#35312e</color>
+    <color name="colorMessageUsername">#F3693D</color>
+    <color name="colorMessageTimeStamp">#A09C96</color>
+    <color name="colorOtherMessageBubble">#ECECEC</color>
+
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorRippleBlue">#6a95ff</color>
+    <color name="colorRippleGrey">#d7ccc8</color>
+
+    <color name="colorTestYellow">#fff4c6</color>
+    <color name="colorTestRed">#f9afaf</color>
+
+    <!--Background gradient colors-->
+    <color name="colorBgGradientStart">#ff006b</color>
+    <color name="colorBgGradientMiddle">#fb7151</color>
+    <color name="colorBgGradientEnd">#fede28</color>
+
+    <!-- Real time blur-->
+    <color name="colorBlurTintColor">#88313131</color>
+
+</resources>

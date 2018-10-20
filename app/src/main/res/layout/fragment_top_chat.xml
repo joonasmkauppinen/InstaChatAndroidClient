@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topChatRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/colorTestRed"
+    android:clickable="true">
+
+    <com.github.mmin18.widget.RealtimeBlurView
+        android:id="@+id/realtimeBlurView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:realtimeBlurRadius="8dp"
+        app:realtimeOverlayColor="@color/colorBlurTintColor" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:maxHeight="350dp"
+        android:orientation="vertical"
+        android:background="@drawable/top_chat_background"
+        android:elevation="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:fontFamily="@font/pacifico"
+            android:text="@string/chat_top_chat_dialogue_title"
+            android:textAlignment="center"
+            android:textColor="@color/colorChatMainPink"
+            android:textSize="22sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/topchat_list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:maxHeight="200dp"
+            android:background="@drawable/topchat_list_borders">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dosis_semibold"
+            android:text="@string/button_close"
+            android:textColor="@color/colorChatMainPink"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/topchat_close_button"
+            android:onClick="onTopChatCloseClicked"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

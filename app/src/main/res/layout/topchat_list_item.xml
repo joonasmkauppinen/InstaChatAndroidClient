@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingBottom="0dp"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp">
+
+    <TextView
+        android:id="@+id/textView_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="1dp"
+
+        tools:text="1."
+        android:textSize="17sp"
+        android:textColor="@color/colorLightBrown"
+        android:fontFamily="@font/dosis_bold"
+        android:fontFeatureSettings=""/>
+
+    <ImageView
+        android:id="@+id/ic_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_person"
+        android:layout_toEndOf="@id/textView_position"/>
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+
+        tools:text="John Doe"
+        android:textSize="16sp"
+        android:textColor="@color/colorLightBrown"
+        android:fontFamily="@font/dosis_medium"
+        android:layout_toEndOf="@id/ic_person"/>
+
+    <ImageView
+        android:id="@+id/ic_envelope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_envelope"
+        android:layout_below="@id/ic_person"
+        android:layout_toEndOf="@id/textView_position"/>
+
+    <TextView
+        android:id="@+id/textView_msgAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginBottom="16dp"
+
+        tools:text="15"
+        android:textSize="16sp"
+        android:textColor="@color/colorLightBrown"
+        android:fontFamily="@font/dosis_medium"
+        android:layout_below="@id/textView_name"
+        android:layout_toEndOf="@id/ic_envelope"/>
+
+    <View
+        android:id="@+id/itemDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightGrey"
+        android:layout_below="@id/textView_msgAmount"/>
+
+</RelativeLayout>

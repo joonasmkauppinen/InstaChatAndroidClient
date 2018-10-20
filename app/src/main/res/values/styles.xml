@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <!-- Dark status bar icons -->
+        <!--<item name="android:windowLightStatusBar">true</item>-->
+
+        <item name="colorPrimary">@color/colorMainWhite</item>
+        <item name="colorPrimaryDark">@color/colorTransparent</item>
+        <item name="colorAccent">@color/colorChatMainPink</item>
+    </style>
+    
+    <style name="expanded_toolbar_title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">65sp</item>
+        <item name="android:textColor">@color/colorPureWhite</item>
+        <item name="android:fontFamily">@font/pacifico</item>
+    </style>
+
+    <style name="collapsed_toolbar_title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/colorPureWhite</item>
+        <item name="android:fontFamily">@font/pacifico</item>
+    </style>
+
+    <style name="button_rounded" parent="@android:style/Widget.Material.Button">
+        <item name="android:textColor">@color/colorMainWhite</item>
+        <item name="android:background">@drawable/button_rounded</item>
+    </style>
+
+
+
+</resources>

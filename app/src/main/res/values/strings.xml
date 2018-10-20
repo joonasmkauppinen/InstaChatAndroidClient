@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">InstaChat</string>
+
+    <!-- Login activity -->
+    <string name="login_info">Enter username below to join chat.</string>
+    <string name="login_edit_text_hint">Username</string>
+    <string name="login_join_button">join</string>
+    <string name="login_banner_app_name">\nChit Chat</string>
+    <string name="login_settings_button_content_description">Settings</string>
+
+    <!-- Chat activity -->
+    <string name="chat_input_hint">"Type a message...</string>
+    <string name="chat_back_button_content_description">Back button</string>
+    <string name="chat_send_button_content_description">Send message button</string>
+    <string name="chat_top_chat_dialogue_title">Top Chatters</string>
+
+    <!-- General -->
+    <string name="button_close">close</string>
+
+    <!-- Preferences -->
+    <string name="pref_user">user</string>
+    <string name="pref_hostaddr">hostaddr</string>
+    <string name="pref_bluramount">bluramount</string>
+    <string name="pref_bgspeed">bgspeed</string>
+
+    <!-- Server IP addresses-->
+    <string name="server_address_home">192.168.1.172</string>
+    <string name="server_address_hotsopt">192.168.43.232</string>
+
+</resources>

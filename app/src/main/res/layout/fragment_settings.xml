@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainWhite"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/settingsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/dosis_bold"
+            android:text="Settings"
+            android:textColor="@color/colorChatMainPink"
+            android:textSize="27sp" />
+
+        <ImageButton
+            android:id="@+id/buttonCloseSettings"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_gravity="end"
+
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_close" />
+    </android.support.v7.widget.Toolbar>
+
+    <!-- Blur amount -->
+    <RelativeLayout
+        android:id="@+id/blurAmountRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/colorMainWhite">
+
+        <TextView
+            android:id="@+id/textView_blurAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+
+            android:fontFamily="@font/dosis_medium"
+            android:text="Blur amount: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView_blurAmount_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10"
+            android:fontFamily="@font/dosis"
+            android:textSize="25sp"
+
+            android:layout_toEndOf="@id/textView_blurAmount"/>
+
+        <SeekBar
+            android:id="@+id/seekbar_bluramount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView_blurAmount"
+            android:max="20"
+
+            android:paddingEnd="60dp"
+            android:paddingStart="60dp"
+            android:progress="100" />
+
+    </RelativeLayout>
+
+    <!-- Stripe speed -->
+    <RelativeLayout
+        android:id="@+id/stripeSpeedRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/colorMainWhite">
+
+        <TextView
+            android:id="@+id/textView_stripeSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+
+            android:fontFamily="@font/dosis_medium"
+            android:text="Stripe speed: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView_stripeSpeed_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10"
+            android:fontFamily="@font/dosis"
+            android:textSize="25sp"
+
+            android:layout_toEndOf="@id/textView_stripeSpeed"/>
+
+        <SeekBar
+            android:id="@+id/seekbar_stripespeed"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView_stripeSpeed"
+            android:min="1"
+            android:max="101"
+            android:progress="50"
+
+            android:paddingEnd="60dp"
+            android:paddingStart="60dp" />
+
+    </RelativeLayout>
+
+    <!-- Server host -->
+    <RadioGroup
+        android:id="@+id/hostServerRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dosis_medium"
+
+            android:paddingStart="40dp"
+            android:text="Host server:"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+
+            android:fontFamily="@font/dosis_medium"
+            android:padding="10dp"
+            android:text="home"
+            android:textSize="21sp"
+
+            android:onClick="onRadioButtonClick"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_hotspot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+
+            android:fontFamily="@font/dosis_medium"
+            android:text="hotspot"
+            android:textSize="21sp"
+
+            android:onClick="onRadioButtonClick"/>
+
+    </RadioGroup>
+
+</LinearLayout>
